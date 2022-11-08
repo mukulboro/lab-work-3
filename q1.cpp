@@ -1,5 +1,5 @@
 /*
-    QUESTION FROM
+    QUESTION FROM GOOGLE CLASSROOM
 */
 
 #include<iostream>
@@ -66,6 +66,7 @@ class Complex{
         }
 
        friend ostream& operator<<(ostream& output, Complex c){
+            // Stream insertion operator
             if(c.imaginary>=0){
                 output << c.real << '+' << c.imaginary<<'i';
             }else{
@@ -87,7 +88,7 @@ int main(){
         is an expample of stream insertion operator <<
     */
     --c3;
-    cout << "--c2: " << c3 <<endl;
+    cout << "--c3: " << c3 <<endl;
     c3 = c1 * 2;
     cout << "c1*2: " << c3 << endl;
     c3 += 5;
